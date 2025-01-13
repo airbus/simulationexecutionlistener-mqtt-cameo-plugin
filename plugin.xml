@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+        id="simulationexecutionlistener-mqtt-cameo-plugin"
+        name="SimulationExecutionListener MQTT Cameo Plugin"
+        version="1.0"
+        provider-name="Airbus"
+        class="com.airbus.mqttconnector.SimulationExecutionListenerMQTTCameoPlugin">
+
+    <requires>
+        <api version="1.2"/>
+        <required-plugin id="SimulationToolkit" name="Cameo Simulation Toolkit"/>
+    </requires>
+
+    <runtime>
+        <library name="simulationexecutionlistener-mqtt-cameo-plugin.jar"/>
+        <library name="lib/json-20230618.jar">
+           <export
+                 name="*">
+           </export>
+        </library>
+        <library name="lib/org.eclipse.paho.mqttv5.client-1.2.5.jar">
+           <export
+                 name="*">
+           </export>
+        </library>
+        <library name="lib/bcprov-jdk18on-175.jar">
+           <export
+                 name="*">
+           </export>
+        </library>
+    </runtime>
+</plugin>

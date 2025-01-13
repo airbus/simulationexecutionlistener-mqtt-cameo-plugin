@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Helle"
+  given-names: "Philipp"
+  orcid: "https://orcid.org/0000-0001-9363-4958"
+- family-names: "Schramm"
+  given-names: "Gerrit"
+  orcid: "https://orcid.org/0000-0002-4617-5469"
+title: "SimulationExecutionListener MQTT Cameo Plugin"
+version: 1.0.0
+doi: "10.1002/iis2.13238"
+date-released: 2024-09-07
+url: "https://github.com/github-linguist/linguist"
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Helle"
+    given-names: "Philipp"
+    orcid: "https://orcid.org/0000-0001-9363-4958"
+  - family-names: "Schramm"
+    given-names: "Gerrit"
+    orcid: "https://orcid.org/0000-0002-4617-5469"
+  doi: "10.1002/iis2.13238"
+  journal: "INCOSE International Symposium"
+  month: 9
+  start: 1807 # First page number
+  end: 1819 # Last page number
+  title: "Hardware-in-the-Loop with SysML and Cameo Systems Modeler"
+  issue: 1
+  volume: 34
+  year: 2024
