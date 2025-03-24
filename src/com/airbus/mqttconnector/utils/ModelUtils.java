@@ -7,6 +7,7 @@
 
 package com.airbus.mqttconnector.utils;
 
+import java.math.BigDecimal;
 import java.util.Collection;
 import java.util.List;
 import java.util.logging.Logger;
@@ -106,7 +107,7 @@ public class ModelUtils {
 		var propertyName = property.getName();
 		if (specification != null && specification.has(propertyName)) {
 			var specifiedValue = specification.get(propertyName);
-            var value = getObjectFromSpecifiedValue(property, specifiedValue);
+			var value = getObjectFromSpecifiedValue(property, specifiedValue);
             if (value != null) {
             	var message = "Setting property " + propertyName + " to Value " + value.toString();
             	log.info(message);
@@ -130,7 +131,7 @@ public class ModelUtils {
 		} else if (specifiedValue instanceof Boolean) {
 		    boolean boolToUse = ((Boolean)specifiedValue).booleanValue();
 		    value = boolToUse;
-		} else if (specifiedValue instanceof Float || specifiedValue instanceof Double) {
+		} else if (specifiedValue instanceof Float || specifiedValue instanceof Double || specifiedValue instanceof BigDecimal) {
 		    double floatToUse = ((Number)specifiedValue).doubleValue();
 		    value = floatToUse;
 		    ModelUtils.checkTypeCompatilityWithPrimitiveType(property, "Real");
