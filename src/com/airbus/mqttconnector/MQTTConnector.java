@@ -31,9 +31,10 @@ import com.airbus.mqttconnector.utils.ModelUtils;
 import com.airbus.mqttconnector.utils.PropertyLoader;
 import com.airbus.mqttconnector.utils.SslUtils;
 import com.nomagic.magicdraw.simulation.fuml.fUMLHelper;
-import com.nomagic.magicdraw.simulation.fuml.classes.Object_;
 import com.nomagic.uml2.ext.jmi.helpers.ClassifierHelper;
 import com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Property;
+
+import fUML.Semantics.Classes.Kernel.Object_;
 
 public class MQTTConnector {
 

@@ -19,25 +19,26 @@ import com.airbus.mqttconnector.CameoSimulationExecutionListener;
 import com.airbus.mqttconnector.SimulationExecutionListenerMQTTCameoPluginConstants;
 import com.nomagic.magicdraw.core.Application;
 import com.nomagic.magicdraw.simulation.fuml.fUMLHelper;
-import com.nomagic.magicdraw.simulation.fuml.behaviors.communications.SignalInstance;
 import com.nomagic.magicdraw.simulation.fuml.classes.BooleanValue;
 import com.nomagic.magicdraw.simulation.fuml.classes.EnumerationValue;
-import com.nomagic.magicdraw.simulation.fuml.classes.FeatureValue;
 import com.nomagic.magicdraw.simulation.fuml.classes.FeatureValueList;
 import com.nomagic.magicdraw.simulation.fuml.classes.IntegerValue;
-import com.nomagic.magicdraw.simulation.fuml.classes.Object_;
 import com.nomagic.magicdraw.simulation.fuml.classes.RealValue;
 import com.nomagic.magicdraw.simulation.fuml.classes.StringValue;
-import com.nomagic.magicdraw.simulation.fuml.classes.StructuredValue;
 import com.nomagic.magicdraw.simulation.fuml.classes.UnlimitedNaturalValue;
-import com.nomagic.magicdraw.simulation.fuml.classes.Value;
-import com.nomagic.magicdraw.simulation.fuml.classes.ValueList;
 import com.nomagic.magicdraw.uml.Finder;
 import com.nomagic.uml2.ext.jmi.helpers.ModelHelper;
 import com.nomagic.uml2.ext.magicdraw.classes.mdkernel.DataType;
 import com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Property;
 import com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Type;
 import com.nomagic.uml2.ext.magicdraw.commonbehaviors.mdcommunications.Signal;
+
+import fUML.Semantics.Classes.Kernel.FeatureValue;
+import fUML.Semantics.Classes.Kernel.Object_;
+import fUML.Semantics.Classes.Kernel.StructuredValue;
+import fUML.Semantics.Classes.Kernel.Value;
+import fUML.Semantics.Classes.Kernel.ValueList;
+import fUML.Semantics.CommonBehaviors.Communications.SignalInstance;
 
 public class ModelUtils {
 
