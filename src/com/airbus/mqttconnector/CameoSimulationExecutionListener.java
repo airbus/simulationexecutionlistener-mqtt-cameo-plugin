@@ -19,16 +19,15 @@ import com.nomagic.magicdraw.core.Application;
 import com.nomagic.magicdraw.simulation.execution.SimulationExecution;
 import com.nomagic.magicdraw.simulation.execution.SimulationExecutionListener;
 import com.nomagic.magicdraw.simulation.fuml.fUMLHelper;
+import com.nomagic.magicdraw.simulation.fuml.behaviors.ParameterValueList;
+import com.nomagic.magicdraw.simulation.fuml.behaviors.communications.SignalInstance;
+import com.nomagic.magicdraw.simulation.fuml.classes.FeatureValue;
+import com.nomagic.magicdraw.simulation.fuml.classes.Object_;
+import com.nomagic.magicdraw.simulation.fuml.classes.StructuredValue;
 import com.nomagic.magicdraw.uml.Finder;
 import com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Element;
 import com.nomagic.uml2.ext.magicdraw.commonbehaviors.mdbasicbehaviors.Behavior;
 import com.nomagic.uml2.ext.magicdraw.statemachines.mdbehaviorstatemachines.State;
-
-import fUML.Semantics.Classes.Kernel.FeatureValue;
-import fUML.Semantics.Classes.Kernel.Object_;
-import fUML.Semantics.Classes.Kernel.StructuredValue;
-import fUML.Semantics.CommonBehaviors.BasicBehaviors.ParameterValueList;
-import fUML.Semantics.CommonBehaviors.Communications.SignalInstance;
 
 public class CameoSimulationExecutionListener extends SimulationExecutionListener {
 
@@ -100,11 +99,6 @@ public class CameoSimulationExecutionListener extends SimulationExecutionListene
     
     @Override
     public void eventTriggered(SignalInstance signal) {
-    	//not implemented
-    }
-    
-    @Override
-    public void behaviorCalled(Behavior behavior, ParameterValueList pvl, Object_ caller, Object_ target, boolean isSynchronous) {
     	//not implemented
     }
     
