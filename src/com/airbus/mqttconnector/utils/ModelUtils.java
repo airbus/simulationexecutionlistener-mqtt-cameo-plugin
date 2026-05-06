@@ -60,13 +60,18 @@ public class ModelUtils {
 		    	valueType = valueType || stereotype.getName().equalsIgnoreCase("valueType");
 		    }
 			if (valueType) {
-				var message = "Checking compatiblity of type " + property.getType().getHumanName() + " and " + typeObject.getHumanName();
-				log.fine(message);
-				var compatible = ModelHelper.isSecondTypeCompatibleToFirst(typeObject, property.getType(), false);
-		        if (!compatible) {
-		        	var warning = "Property type is of type " + property.getType().getHumanName() + " but specified value is of type " + primitiveType + "."; 
-		        	log.warning(warning);
-		        }		
+				if (property.getType() != null)  {
+					var message = "Checking compatiblity of type " + property.getType().getHumanName() + " and " + typeObject.getHumanName();
+					log.fine(message);
+					var compatible = ModelHelper.isSecondTypeCompatibleToFirst(typeObject, property.getType(), false);
+			        if (!compatible) {
+			        	var warning = "Property type is of type " + property.getType().getHumanName() + " but specified value is of type " + primitiveType + "."; 
+			        	log.warning(warning);
+			        }		
+				} else {
+		        	var warning = "Property type of property " + property.getName() + " is null."; 
+		        	log.warning(warning);					
+				}
 		    }
 		}
 	}
